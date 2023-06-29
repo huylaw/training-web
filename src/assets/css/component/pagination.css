@@ -1,0 +1,8 @@
+@import url('../setup.css');
+
+.container-pagination {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: space-between;
+}

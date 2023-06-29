@@ -1,0 +1,7 @@
+@import url('../setup.css');
+
+input {
+    height: var(--h-primary);
+    border-radius: 4px;
+    border: 1px solid var(--color-border);
+}

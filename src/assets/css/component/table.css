@@ -1,0 +1,128 @@
+@import url('../setup.css');
+
+.action-table {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+}
+.action-table .action2-table {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+.action-table .search-table {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 300px;
+}
+.action-table .search-table input {
+    width: 100%;
+    padding: 0 36px 0 12px;
+}
+.action-table .search-table input::placeholder {
+    font-family: var(--ff-italic);
+}
+.action-table .icon-search {
+    background-position: -315px -146px;
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    right: 8px;
+}
+.action-table .icon-reload-table {
+    background-position: -1096px -88px;
+    height: 24px;
+    width: 24px;
+    cursor: pointer;
+}
+
+.container-table {
+    overflow-y: auto;
+    width: 100%;
+    box-sizing: border-box;
+    flex: 1;
+}
+
+table {
+    width: 100%;
+    font-size: var(--fs-primary);
+    font-weight: 400;
+    border-collapse: separate;
+    border-spacing: 0;
+    border-bottom: 1px solid #e9e9e9;
+    table-layout: fixed;
+}
+
+td, th {
+    border-bottom: 1px solid #e9e9e9;
+    padding: 0 16px;
+    vertical-align: middle;
+}
+
+td {
+    border-right: 1px dashed #e9e9e9;
+}
+
+th {
+    font-size: 12px;
+    border-right: 1px solid rgba(0, 0, 0, 0.196);
+}
+
+thead {
+    height: 32px;
+    background-color: #e9e9e9;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+thead tr {
+    height: 100%;
+}
+
+tr {
+    height: 38px;
+}
+
+tbody tr:hover {
+    background-color: #f5f5f5;
+    cursor: pointer;
+}
+
+tr input[type='checkbox'] {
+    appearance: none;
+    border: 2px solid #666666;
+    border-radius: 4px;
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+tr input[type='checkbox']::after {
+    content: '\2714';
+    color: #ffffff;
+    display: none;
+}
+
+tr input[type='checkbox']:hover {
+    background-color: #e6e6e6;
+}
+
+tr input[type='checkbox']:checked {
+    background-color: var(--color-primary);
+    border: none;
+    border-radius: 4px;
+}
+
+tr input[type='checkbox']:checked::after {
+    display: block;
+}
+
+.footer-table {
+    height: 56px;
+}

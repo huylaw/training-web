@@ -1,0 +1,39 @@
+@import url('./setup.css');
+@import url('./component/button.css');
+@import url('./component/input.css');
+@import url('./component/dropdown.css');
+@import url('./component/table.css');
+@import url('./component/pagination.css');
+@import url('./component/selectbox.css');
+
+* {
+    font-family: var(--ff-primary);
+    font-size: var(--fs-primary);
+}
+
+a {
+    text-decoration: none;
+}
+
+*:focus {
+    outline: none;
+}
+
+.icon {
+    background: url('../img/Sprites.64af8f61.svg') no-repeat;
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+    height: 5px;
+}
+
+::-webkit-scrollbar-track {
+    /* background: #f1f1f1;  */
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: gray;
+    border-radius: 10px;
+}

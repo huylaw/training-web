@@ -1,0 +1,32 @@
+:root {
+    --ff-primary: 'huy_font-frimary';
+    --ff-bold: 'huy_font-bold';
+    --ff-italic: 'huy_font-italic';
+    --ff-semibold: 'huy_font-semibold';
+    --fs-primary: 13px; /*font-size*/
+    --h-primary: 36px;  /*height*/
+    --color-primary: #7D1F8D; /*màu mặc định*/
+    --color-hover: #B052C0;
+    --color-shadow: rgba(1,22,30,0.16);
+    --color-border: #e6e6e6;
+}
+
+@font-face {
+    font-family: 'huy_font-frimary';
+    src: url('../fonts/notosans-regular.2cb88a13.woff2');
+}
+
+@font-face {
+    font-family: 'huy_font-bold';
+    src: url('../fonts/notosans-bold.3ede5aff.woff2');
+}
+
+@font-face {
+    font-family: 'huy_font-italic';
+    src: url('../fonts/notosans-italic.1c1aaac9.woff2');
+}
+
+@font-face {
+    font-family: 'huy_font-semibold';
+    src: url('../fonts/notosans-semibold.df3e6dc4.woff2');
+}
